@@ -153,6 +153,25 @@
 							<key>name</key>
 							<string>entity.name.type.class.slash</string>
 						</dict>
+					</dict>
+					<key>match</key>
+					<string>^\s*(class)\s+([A-Z][A-Za-z0-9_]*)</string>
+					<key>name</key>
+					<string>meta.class.slash</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.class.slash</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.type.class.slash</string>
+						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
@@ -167,7 +186,7 @@
 					<key>match</key>
 					<string>^\s*(class)\s+([A-Z][A-Za-z0-9_]*)\s+(extends)\s+([A-Z][A-Za-z0-9_]*)</string>
 					<key>name</key>
-					<string>meta.class.slash</string>
+					<string>meta.class.extends.slash</string>
 				</dict>
 				<dict>
 					<key>captures</key>
