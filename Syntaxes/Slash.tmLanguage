@@ -130,7 +130,15 @@
 					<key>end</key>
 					<string>$</string>
 					<key>name</key>
-					<string>comment.line.slash</string>
+					<string>comment.line.hash.slash</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>//</string>
+					<key>end</key>
+					<string>$</string>
+					<key>name</key>
+					<string>comment.line.c-style.slash</string>
 				</dict>
 				<dict>
 					<key>begin</key>
