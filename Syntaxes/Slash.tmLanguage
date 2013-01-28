@@ -98,6 +98,28 @@
 			<key>name</key>
 			<string>constant.character.escape.slash</string>
 		</dict>
+		<key>interpolated-slash</key>
+		<dict>
+			<key>begin</key>
+			<string>#\{</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.slash</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\}</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#slash-language</string>
+				</dict>
+			</array>
+		</dict>
 		<key>nest_curly_r</key>
 		<dict>
 			<key>begin</key>
@@ -304,7 +326,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(class|extends|def|if|elsif|else|unless|for|in|while|until|and|or|not|lambda|try|catch|return|next|last|throw)\b</string>
+					<string>\b(class|extends|def|if|elsif|else|unless|for|in|while|until|and|or|not|lambda|try|catch|return|next|last|throw|use)\b</string>
 					<key>name</key>
 					<string>keyword.language.slash</string>
 				</dict>
@@ -418,6 +440,10 @@
 						<dict>
 							<key>include</key>
 							<string>#escaped-char</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#interpolated-slash</string>
 						</dict>
 					</array>
 				</dict>
